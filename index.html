@@ -17,28 +17,82 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./resources/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f02873c0e4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Morten R Thomsen</title>
+    <script src="resources/js/main.js" defer></script>
   </head>
   <body>
     <h2 class="headline">Morten R. Thomsen</h2>
     <div class="background"></div>
     <div class="container">
       <div class="nav-container">
-        <a href="https://statmod.mortenthomsen.dk/" class="stat-mod-link nav-link">
-          <div class="stat-mod-container container-in-link">
+        <a
+          href="https://statmod.mortenthomsen.dk/"
+          class="stat-mod-link nav-link"
+        >
+          <div class="stat-mod-container container-inside-link">
             <h3>Stat-Mod</h3>
             <h5>Optegning af statiske modeller</h5>
           </div>
         </a>
+
+
+        <div id="cv-btn" class="cv-link nav-link">
+          <div class="cv-container container-inside-link">
+            <h3>CV</h3>
+          </div>
+        </div>
+
+        <div id="cv-modal" class="cv-modal main-modal pseudo-hidden">
+          <div id="cv-modal-exit-icon" class="exit-icon">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="cv-preview-container">
+            <img title="Åben i ny fane" id="cv-preview-image" src="data/CV2021_MRT_preview.png" alt="">
+          </div>
+          <a class="cv-download-link" href="data/CV2021_Morten_Riisberg_Thomsen.pdf"><h3>DOWNLOAD SOM PDF</h3></a>
+        </div>
+
+
         <div id="kontakt-btn" class="kontakt-link nav-link">
-            <div class="kontakt-container container-in-link">
-              <h3>Kontakt</h3>
-            </div>
+          <div class="kontakt-container container-inside-link">
+            <h3>Kontakt</h3>
+          </div>
+        </div>
+
+        <div id="kontakt-modal" class="kontakt-modal main-modal pseudo-hidden">
+          <span class="email-span"
+            ><h4 class="email-head">EMAIL:</h4>
+            <h5 id="email-content"></h5>
+            <a id="email-logo">
+              <i class="far fa-paper-plane"></i>
+              <span class="tooltip">SEND EMAIL</span></a></span>
+          <a
+            href="https://dk.linkedin.com/in/morten-riisberg-thomsen-1165a819b"
+            class="linkedin-link"
+            ><i class="fab fa-linkedin"></i><span class="tooltip linkedin-tooltip">LINKED<br>IN</span></a>
+          <div id="kontakt-modal-exit-icon" class="exit-icon">
+            <i class="fas fa-times"></i>
+          </div>
         </div>
       </div>
     </div>
+    <div
+      id="kontakt-modal-backdrop"
+      class="backdrop hidden pseudo-hidden"
+    ></div>
+    <div
+      id="cv-modal-backdrop"
+      class="backdrop hidden pseudo-hidden"
+    ></div>
   </body>
 </html>
