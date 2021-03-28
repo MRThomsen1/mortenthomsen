@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mortenthom/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R resources $DEPLOYPATH
+    - /bin/cp -R data $DEPLOYPATH
